@@ -1,11 +1,14 @@
 var express = require("express");
+var path = require("path");
 var bodyParser = require("body-parser");
 var app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
+
 app.get("/", function (req, res) {
-    res.send("hey")
+    res.sendFile(path.join(__dirname, "/index.html"));
 })
 
 app.post("/dic", function(req, res) {
