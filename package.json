@@ -1,11 +1,14 @@
 {
   "name": "slack-slashes",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "author": "James Clarke",
   "license": "MIT",
   "scripts": {
-      "start": "nodemon server.js"
+    "start": "nodemon server.js"
+  },
+  "engines": {
+    "node": "10.x"
   },
   "dependencies": {
     "bluebird": "^3.5.5",
